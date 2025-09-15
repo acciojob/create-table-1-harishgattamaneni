@@ -9,5 +9,5 @@ function insert_Row() {
     newTd2.innerHTML=`New Cell2`
     newTr.appendChild(newTd1)
     newTr.appendChild(newTd2)
-    ele.innerHTML=newTr.innerHTML+ele.innerHTML
+    ele.insertBefore(newTr, ele.firstChild);
 }
