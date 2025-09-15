@@ -5,9 +5,9 @@ function insert_Row() {
     let newTr=document.createElement("tr")
     let newTd1=document.createElement("td")
     let newTd2=document.createElement("td")
-    newTd1.innerHTML=`Row${n+2} cell1`
-    newTd2.innerHTML=`Row${n+2} cell2`
+    newTd1.innerHTML=`New Cell1`
+    newTd2.innerHTML=`New Cell2`
     newTr.appendChild(newTd1)
     newTr.appendChild(newTd2)
-    ele.appendChild(newTr)
+    ele.innerHTML=newTr.innerHTML+ele.innerHTML
 }
